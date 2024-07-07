@@ -3,7 +3,7 @@
 Description
 A collection of scripts and automations that you can run within the zsh shell!
 
-# Script
+Script
 
 !/bin/zsh
 
@@ -26,13 +26,14 @@ chmod +x random_wallpaper.sh
 DEPENDENCIES
  `feh` (or preferred wallpaper setting tool)
 
-### Directory Bookmarks
+
+# DIRECTORY BOOKMARKS
 
 Description
 Create, list, and jump to directory bookmarks, making navigation across 
 frequently used directories seamless.
 
-# Script
+Script
 
 !/bin/zsh
 
@@ -65,16 +66,18 @@ alias badd=bookmark_add
 alias blist=bookmark_list
 alias bjump=bookmark_jump
 
-# Usage
+Usage
 Add a bookmark: badd bookmark_name
 List bookmarks: blist
 Jump to a bookmark: bjump bookmark_name
 
-### Weather Info Fetcher
+### WEATHER INFO FETCHER
 
 Description
 Fetch and display current weather information for a specified city using a 
 command-line weather API.
+
+Script
 
 !/bin/zsh
 
@@ -101,7 +104,7 @@ get_weather "London"
 `curl`
 `jq`
 
-### Git Branch Cleaner
+### GIT BRANCH CLEANER
 
 Description
 List and delete local branches that have been merged into the current 
@@ -120,14 +123,14 @@ Run the script to delete merged branches:
 sh
 clean_merged_branches
 
-### Timer
+### TIMER
 
 Description
 A simple timer script to count down from a specified number of seconds. 
 Great for time management and focused work sessions. can be used as a 
 pomodoro timer!
 
-# Script
+Script
 !/bin/zsh
 
 Function to start a timer
