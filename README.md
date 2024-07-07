@@ -6,21 +6,23 @@ A collection of scripts and automations that you can run within the zsh shell!
 
 # Script
 
+`!/bin/zsh
 
-#!/bin/zsh
+Directory containing wallpapers
 
-# Directory containing wallpapers
 WALLPAPER_DIR="$HOME/Pictures/Wallpapers"
 
-# Get a random wallpaper
+Get a random wallpaper
+
 RANDOM_WALLPAPER=$(ls $WALLPAPER_DIR | sort -R | tail -1)
 
-# Set the wallpaper using feh (change to your preferred tool)
+Set the wallpaper using feh (change to your preferred tool)
+
 feh --bg-scale "$WALLPAPER_DIR/$RANDOM_WALLPAPER"
 
 chmod +x random_wallpaper.sh
 
-./random_wallpaper.sh
+./random_wallpaper.sh`
 
 DEPENDENCIES
  `feh` (or preferred wallpaper setting tool)
@@ -32,25 +34,25 @@ DEPENDENCIES
 Create, list, and jump to directory bookmarks, making navigation across 
 frequently used directories seamless.
 
-# Script
+Script
 
-#!/bin/zsh
+!/bin/zsh
 
-# Bookmarks file
+Bookmarks file
 BOOKMARKS_FILE="$HOME/.dir_bookmarks"
 
-# Function to add a bookmark
+Function to add a bookmark
 bookmark_add() {
     echo "$1=$PWD" >> $BOOKMARKS_FILE
     echo "Bookmark added: $1 -> $PWD"
 }
 
-# Function to list bookmarks
+Function to list bookmarks
 bookmark_list() {
     cat $BOOKMARKS_FILE
 }
 
-# Function to jump to a bookmark
+Function to jump to a bookmark
 bookmark_jump() {
     local DEST=$(grep "^$1=" $BOOKMARKS_FILE | cut -d '=' -f 2-)
     if [ -n "$DEST" ]; then
@@ -60,7 +62,7 @@ bookmark_jump() {
     fi
 }
 
-# Alias for ease of use
+Alias for ease of use
 alias badd=bookmark_add
 alias blist=bookmark_list
 alias bjump=bookmark_jump
