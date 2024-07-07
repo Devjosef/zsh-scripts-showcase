@@ -1,11 +1,8 @@
 # Fun and Lesser-Known Zsh Scripts
 
-## 1. Random Wallpaper Setter
 
 ### Description
-
-Sets a random wallpaper from a specified directory each time you run the 
-script. Perfect for keeping your desktop environment fresh.
+A collection of scripts and automations that you can run within the zsh shell!
 
 ### Script
 
@@ -28,8 +25,7 @@ chmod +x random_wallpaper.sh
 DEPENDENCIES
  `feh` (or preferred wallpaper setting tool)
 
-
-2. Directory Bookmarks
+Directory Bookmarks
 
 Description
 
@@ -74,10 +70,9 @@ Add a bookmark: badd bookmark_name
 List bookmarks: blist
 Jump to a bookmark: bjump bookmark_name
 
-3. Weather Info Fetcher
+Weather Info Fetcher
 
 Description
-
 Fetch and display current weather information for a specified city using a 
 command-line weather API.
 
@@ -99,7 +94,7 @@ get_weather() {
 # Usage: get_weather "CityName"
 get_weather "London"
 
-#Usage
+Usage
 Replace your_api_key_here with your actual API key from OpenWeatherMap.
 Run the script with a city name:
 sh
@@ -109,10 +104,8 @@ Dependencies
 `curl`
 `jq`
 
-4. Git Branch Cleaner
-
+Git Branch Cleaner
 Description
-
 List and delete local branches that have been merged into the current 
 branch to keep your git repository clean.
 
@@ -127,12 +120,12 @@ clean_merged_branches() {
 # Usage: clean_merged_branches
 clean_merged_branches
 
-#Usage
+Usage
 Run the script to delete merged branches:
 sh
 clean_merged_branches
 
-5. Timer
+Timer
 
 Description
 A simple timer script to count down from a specified number of seconds. 
@@ -161,7 +154,7 @@ Run the script with the number of seconds to count down:
 sh
 timer 10
 
-6. Command History Search
+Command History Search
 
 Description
 Quickly search your command history for a specific term, making it easier 
@@ -183,7 +176,7 @@ Run the script with the term you want to search for:
 sh
 history_search "git"
 
-7. Temporary HTTP Server
+Temporary HTTP Server
 
 Description
 Quickly start a temporary HTTP server to serve files from a directory. 
@@ -211,7 +204,7 @@ start_http_server 8000
 Dependencies
 `python`
 
-8. Automated Backup Script
+Automated Backup Script
 
 Description
 Automate the backup of important files or directories to a specified 
@@ -236,7 +229,7 @@ echo "Backup completed at $(date)"
 Save script as `backup.sh`, and make it executable with `chmod +x 
 backup.sh` run it to perform the backup.
 
-9. Automated System Update
+Automated System Update
 
 Description
 Automatically update your system packages.
@@ -256,7 +249,7 @@ echo "System update completed at $(date)"
 Save the script as `update_system.sh` make it executable by running `chmod 
 +x update_system.sh` and run it to update your system.
 
-10. Automated Email Notification
+Automated Email Notification
 
 Description
 Send an email notification after a long-running task is completed.
@@ -281,7 +274,7 @@ echo "Notification sent to $EMAIL"
 Save the script as `notify.sh` make it executable `chmod +x notify.sh` and 
 run it to perform the task and send the notification.
 
-11. Automated File Organizer
+Automated File Organizer
 
 Description
 Automatically organize files in a directory based on their type.
@@ -320,7 +313,7 @@ Save this script as `organize_files.sh` make it executable `chmod +x
 organize_files.sh` and run it to organize files in your Downloads 
 directory.
 
-12. Automated Git Commit and Push
+Automated Git Commit and Push
 
 Description
 Automatically commit and push changes to a Git repository.
@@ -349,7 +342,7 @@ Save this script as `auto_commit_push.sh` make it executable ` chmod +x
 auto_committ_push.sh` and run it to automatically commit and push changes 
 to your repository.
 
-13. Running Automations on Schedule
+Running Automations on Schedule
 
 Description
 You can use cron to schedule these scripts to run at specific intervals.
