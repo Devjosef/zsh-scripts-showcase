@@ -1,11 +1,8 @@
 # Fun and Lesser-Known Zsh Scripts
 
-## 1. Random Wallpaper Setter
 
 ### Description
-
-Sets a random wallpaper from a specified directory each time you run the 
-script. Perfect for keeping your desktop environment fresh.
+A collection of scripts and automations that you can run within the zsh shell!
 
 ### Script
 
@@ -31,6 +28,7 @@ DEPENDENCIES
 Directory Bookmarks
 
 Description
+
 Create, list, and jump to directory bookmarks, making navigation across 
 frequently used directories seamless.
 
