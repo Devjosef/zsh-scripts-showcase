@@ -6,7 +6,7 @@ A collection of scripts and automations that you can run within the zsh shell!
 
 # Script
 
-`!/bin/zsh
+!/bin/zsh
 
 Directory containing wallpapers
 
@@ -22,7 +22,7 @@ feh --bg-scale "$WALLPAPER_DIR/$RANDOM_WALLPAPER"
 
 chmod +x random_wallpaper.sh
 
-./random_wallpaper.sh`
+./random_wallpaper.sh
 
 DEPENDENCIES
  `feh` (or preferred wallpaper setting tool)
@@ -34,7 +34,7 @@ DEPENDENCIES
 Create, list, and jump to directory bookmarks, making navigation across 
 frequently used directories seamless.
 
-Script
+# Script
 
 !/bin/zsh
 
