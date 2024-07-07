@@ -4,9 +4,9 @@
 ### Description
 A collection of scripts and automations that you can run within the zsh shell!
 
-### Script
+# Script
 
-```zsh
+
 #!/bin/zsh
 
 # Directory containing wallpapers
@@ -25,14 +25,14 @@ chmod +x random_wallpaper.sh
 DEPENDENCIES
  `feh` (or preferred wallpaper setting tool)
 
-Directory Bookmarks
+### Directory Bookmarks
 
-Description
+### Description
 
 Create, list, and jump to directory bookmarks, making navigation across 
 frequently used directories seamless.
 
-Script
+# Script
 
 #!/bin/zsh
 
@@ -65,14 +65,14 @@ alias badd=bookmark_add
 alias blist=bookmark_list
 alias bjump=bookmark_jump
 
-Usage
+# Usage
 Add a bookmark: badd bookmark_name
 List bookmarks: blist
 Jump to a bookmark: bjump bookmark_name
 
-Weather Info Fetcher
+### Weather Info Fetcher
 
-Description
+### Description
 Fetch and display current weather information for a specified city using a 
 command-line weather API.
 
@@ -91,25 +91,24 @@ get_weather() {
     echo "Current weather in $CITY: $TEMP°C, $DESC"
 }
 
-# Usage: get_weather "CityName"
-get_weather "London"
-
-Usage
+# Usage
 Replace your_api_key_here with your actual API key from OpenWeatherMap.
 Run the script with a city name:
 sh
 get_weather "London"
 
-Dependencies
+# Dependencies
 `curl`
 `jq`
 
-Git Branch Cleaner
-Description
+### Git Branch Cleaner
+
+# Description
+
 List and delete local branches that have been merged into the current 
 branch to keep your git repository clean.
 
-Script
+# Script
 #!/bin/zsh
 
 # Function to delete merged branches
@@ -117,22 +116,20 @@ clean_merged_branches() {
     git branch --merged | grep -v '^\*' | xargs -n 1 git branch -d
 }
 
-# Usage: clean_merged_branches
-clean_merged_branches
-
-Usage
+# Usage
 Run the script to delete merged branches:
 sh
 clean_merged_branches
 
-Timer
+### Timer
 
-Description
+# Description
+
 A simple timer script to count down from a specified number of seconds. 
 Great for time management and focused work sessions. can be used as a 
 pomodoro timer!
 
-Script
+# Script
 #!/bin/zsh
 
 # Function to start a timer
@@ -146,21 +143,19 @@ timer() {
     echo "Time's up!"
 }
 
-# Usage: timer 10
-timer 10
-
-Usage
+# Usage
 Run the script with the number of seconds to count down:
 sh
 timer 10
 
-Command History Search
+### Command History Search
 
-Description
+# Description
+
 Quickly search your command history for a specific term, making it easier 
 to find and reuse past commands.
 
-Script
+# Script
 #!/bin/zsh
 
 # Function to search command history
@@ -168,21 +163,19 @@ history_search() {
     history | grep "$1"
 }
 
-# Usage: history_search "search_term"
-history_search "git"
-
-Usage
+# Usage
 Run the script with the term you want to search for:
 sh
 history_search "git"
 
-Temporary HTTP Server
+### Temporary HTTP Server
 
-Description
+# Description
+
 Quickly start a temporary HTTP server to serve files from a directory. 
 Useful for sharing files or testing locally.
 
-Script
+# Script
 
 #!/bin/zsh
 
@@ -193,24 +186,22 @@ start_http_server() {
     python -m http.server $PORT
 }
 
-# Usage: start_http_server 8000
-start_http_server 8000
-
-Usage
+# Usage
 Run the script with the desired port number:
 sh
 start_http_server 8000
 
-Dependencies
+# Dependencies
 `python`
 
-Automated Backup Script
+### Automated Backup Script
 
-Description
+# Description
+
 Automate the backup of important files or directories to a specified 
 location.
 
-Script
+# Script
 #!/bin/zsh
 
 # Source and destination directories
@@ -229,12 +220,12 @@ echo "Backup completed at $(date)"
 Save script as `backup.sh`, and make it executable with `chmod +x 
 backup.sh` run it to perform the backup.
 
-Automated System Update
+### Automated System Update
 
-Description
+# Description
 Automatically update your system packages.
 
-Script
+# Script
 #!/bin/zsh
 
 # Update package lists
@@ -249,12 +240,12 @@ echo "System update completed at $(date)"
 Save the script as `update_system.sh` make it executable by running `chmod 
 +x update_system.sh` and run it to update your system.
 
-Automated Email Notification
+### Automated Email Notification
 
-Description
+# Description
 Send an email notification after a long-running task is completed.
 
-Script
+# Script
 #!/bin/zsh
 
 # Your email address
@@ -274,12 +265,12 @@ echo "Notification sent to $EMAIL"
 Save the script as `notify.sh` make it executable `chmod +x notify.sh` and 
 run it to perform the task and send the notification.
 
-Automated File Organizer
+### Automated File Organizer
 
-Description
+# Description
 Automatically organize files in a directory based on their type.
 
-Script
+# Script
 #!/bin/zsh
 
 # Source directory
@@ -313,12 +304,12 @@ Save this script as `organize_files.sh` make it executable `chmod +x
 organize_files.sh` and run it to organize files in your Downloads 
 directory.
 
-Automated Git Commit and Push
+### Automated Git Commit and Push
 
-Description
+# Description
 Automatically commit and push changes to a Git repository.
 
-Script
+# Script
 #!/bin/zsh
 
 # Change to the repository directory
@@ -342,12 +333,12 @@ Save this script as `auto_commit_push.sh` make it executable ` chmod +x
 auto_committ_push.sh` and run it to automatically commit and push changes 
 to your repository.
 
-Running Automations on Schedule
+### Running Automations on Schedule
 
-Description
+# Description
 You can use cron to schedule these scripts to run at specific intervals.
 
-Script
+# Script
 
 Edit the crontab:
 sh
