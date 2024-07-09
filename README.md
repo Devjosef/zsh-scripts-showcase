@@ -37,7 +37,7 @@ Sets a random wallpaper from a specified directory. each time you run the script
 
 # DIRECTORY BOOKMARKS
 
-Description
+Description:
 Create, list, and jump to directory bookmarks, making navigation across 
 frequently used directories seamless.
 
@@ -81,7 +81,7 @@ Jump to a bookmark: bjump bookmark_name
 
 # WEATHER INFO FETCHER
 
-Description
+Description:
 Fetch and display current weather information for a specified city using a 
 command-line weather API.
 
@@ -114,7 +114,7 @@ get_weather "London"
 
 # GIT BRANCH CLEANER
 
-Description
+Description:
 List and delete local branches that have been merged into the current 
 branch to keep your git repository clean.
 
@@ -134,7 +134,7 @@ clean_merged_branches
 
 # TIMER
 
-Description
+Description:
 A simple timer script to count down from a specified number of seconds. 
 Great for time management and focused work sessions. can be used as a 
 pomodoro timer!
@@ -160,7 +160,7 @@ timer 10
 
 # Command History Search
 
-Description
+Description:
 Quickly search your command history for a specific term, making it easier 
 to find and reuse past commands.
 
@@ -179,7 +179,7 @@ history_search "git"
 
 # Temporary HTTP Server
 
-Description
+Description:
 Quickly start a temporary HTTP server to serve files from a directory. 
 Useful for sharing files or testing locally.
 
@@ -204,7 +204,7 @@ start_http_server 8000
 
 # Automated Backup Script
 
-Description
+Description:
 
 Automate the backup of important files or directories to a specified 
 location.
@@ -230,7 +230,7 @@ backup.sh` run it to perform the backup.
 
 # Automated System Update
 
-Description
+Description:
 Automatically update your system packages.
 
 Script
@@ -250,7 +250,7 @@ Save the script as `update_system.sh` make it executable by running `chmod
 
 # Automated Email Notification
 
-Description
+Description:
 Send an email notification after a long-running task is completed.
 
 Script
@@ -275,7 +275,7 @@ run it to perform the task and send the notification.
 
 # Automated File Organizer
 
-Description
+Description:
 Automatically organize files in a directory based on their type.
 
 Script
@@ -314,7 +314,7 @@ directory.
 
 # Automated Git Commit and Push
 
-Description
+Description:
 Automatically commit and push changes to a Git repository.
 
 Script
@@ -343,7 +343,7 @@ to your repository.
 
 # Running Automations on Schedule
 
-Description
+Description:
 You can use cron to schedule these scripts to run at specific intervals.
 
 Script
