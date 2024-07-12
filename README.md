@@ -1,4 +1,4 @@
-# Fun and Lesser-Known Zsh Scripts
+# Useful Zsh scripts for macOS users.
 
 A collection of scripts and automations that you can run within the zsh shell!.
 
